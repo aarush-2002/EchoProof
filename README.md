@@ -1,242 +1,413 @@
-EchoProof
+# EchoProof
 
-Prove the voice. Prove the moment. Prove the truth.
+> **Prove the Voice. Prove the Moment. Prove the Truth.**
 
-EchoProof is a voice authenticity and digital-evidence platform designed to help users record, verify, protect, and investigate audio in an era of AI-generated voices.
+EchoProof is a voice authenticity and digital evidence platform designed to protect people from AI-generated voices, voice cloning, manipulated recordings, and audio-based fraud.
 
-✨ Features
-A — Authenticate
+It provides a complete trust workflow:
 
-Verify whether a voice recording is likely to come from a genuine human recording rather than being AI-generated or manipulated.
+**Authenticate → Bind → Certify → Defend → Educate → Forensics**
 
-How to use:
+---
 
-Open Authenticate.
-Upload an audio file or select a recording.
-EchoProof analyzes the voice.
-View the Authenticity Score and analysis results.
-Review the detected indicators before trusting the recording.
-B — Bind
+## Table of Contents
 
-Bind a recording to the conditions in which it was created using its Acoustic DNA.
+- [Features](#features)
+  - [A. Authenticate](#a-authenticate)
+  - [B. Bind](#b-bind)
+  - [C. Certify](#c-certify)
+  - [D. Defend](#d-defend)
+  - [E. Educate](#e-educate)
+  - [F. Forensics](#f-forensics)
+  - [Live Call Shield](#live-call-shield)
+  - [Voice Passport](#voice-passport)
+  - [Trust QR](#trust-qr)
+  - [Chain of Custody](#chain-of-custody)
+  - [EchoProof API](#echoproof-api)
+- [Complete Workflow](#complete-workflow)
 
-Acoustic DNA can include characteristics such as:
+---
 
-Environmental sound profile
-Room acoustics
-Recording-device characteristics
-Temporal audio characteristics
+# Features
 
-How to use:
+## A. Authenticate
 
-Start a recording through EchoProof.
-Keep the phone in a normal recording position.
-Speak naturally.
-EchoProof captures the voice together with its surrounding acoustic information.
-Finish the recording to generate its unique Acoustic DNA.
-C — Certify
+### Purpose
 
-Create a verifiable digital certificate for an authentic recording.
+Authenticate an audio recording and determine whether it shows characteristics associated with genuine human speech, AI-generated speech, or manipulation.
 
-Each certified recording can contain:
+### What it analyzes
 
-Recording timestamp
-Authenticity information
-Cryptographic hash
-Digital signature
-Verification QR
+- Voice characteristics
+- Speech patterns
+- Audio artifacts
+- Synthetic speech indicators
+- Recording consistency
+- Potential manipulation signals
 
-How to use:
+### How to use
 
-Open a verified recording.
-Tap Certify.
-EchoProof generates a digital certificate.
-Share the certificate or its QR code.
-Another person can scan the QR to verify the recording.
-🛡️ D — Defend
+1. Open **Authenticate**.
+2. Upload an audio recording or select a recording from your device.
+3. Start the authentication analysis.
+4. Wait for the analysis to complete.
+5. View the **Authenticity Score**.
+6. Review the detected indicators.
+7. Open the detailed explanation to understand the result.
 
-Protect your voice before it becomes a deepfake resource.
+### Result
 
-Voice Exposure Score
+The system provides an authenticity assessment along with supporting indicators instead of relying only on a simple "Real" or "Fake" label.
 
-Estimate how exposed your publicly available voice is to potential cloning.
+---
 
-How to use:
+# B. Bind
 
-Open Voice Protection.
-Run an exposure check.
-EchoProof analyzes your available voice samples.
-View your Voice Exposure Score.
-Follow the recommended protection steps.
-Sensitive Recording Protection
+## Acoustic DNA
 
-Identify recordings that may contain information you shouldn't publicly share.
+### Purpose
 
-How to use:
+Bind a recording to the conditions under which it was created.
 
-Select a recording.
-Run Privacy Check.
-EchoProof analyzes the content.
-Review detected sensitive information.
-Choose whether to keep, protect, or remove the recording.
-🧠 E — Educate
+EchoProof creates an **Acoustic DNA** profile using characteristics of the recording environment and recording device.
 
-Help users understand why an audio recording may be suspicious.
+### Acoustic DNA can include
 
-Instead of simply showing Fake or Real, EchoProof explains the detected signals in simple language.
+- Room acoustic characteristics
+- Environmental sound profile
+- Microphone characteristics
+- Background noise patterns
+- Temporal audio characteristics
+- Recording metadata
 
-How to use:
+### How to use
 
-Authenticate a recording.
-Open Why this result?
-Review the detected indicators.
-Expand individual indicators for more information.
-Use the explanation to make an informed decision.
-🔬 F — Forensics
+1. Open **Record**.
+2. Start a new recording.
+3. Speak naturally while recording.
+4. EchoProof captures the voice and surrounding acoustic information.
+5. Stop the recording.
+6. The system generates an **Acoustic DNA** profile.
+7. The profile becomes associated with the recording.
 
-Analyze suspicious recordings and generate a detailed forensic report.
+### Purpose of Binding
 
-Tampering Analysis
+Voice cloning can reproduce someone's voice, but reproducing the exact combination of voice, environment, device characteristics, and recording conditions is significantly harder.
 
-Find potential points where an audio recording may have been modified.
+---
 
-How to use:
+# C. Certify
 
-Open Forensics.
-Upload the suspicious recording.
-Start Tampering Analysis.
-Review the audio timeline.
-Inspect highlighted sections.
-Export the analysis report.
-Audio Timeline
+## Digital Certification
 
-Visualize suspicious events throughout a recording.
+### Purpose
 
-How to use:
+Create a verifiable certificate for a recording.
 
-Open a forensic analysis.
-Select Timeline.
-Tap any highlighted event.
-Listen to the corresponding section.
-Review the associated analysis.
-Forensic Report
+A certified recording can contain:
 
-Generate a structured report containing the analysis performed by EchoProof.
+- Recording timestamp
+- Recording identifier
+- Acoustic DNA information
+- Cryptographic hash
+- Digital signature
+- Authenticity information
+- Verification QR code
 
-How to use:
+### How to use
 
-Complete a forensic analysis.
-Tap Generate Report.
-Review the findings.
-Export or share the generated report.
+1. Open a recording.
+2. Complete authentication and binding.
+3. Tap **Certify**.
+4. EchoProof generates the recording certificate.
+5. A unique verification QR code is created.
+6. Share the certificate or QR code with others.
 
-Note: EchoProof's analysis is intended as an authenticity and forensic-assistance tool and should not automatically be treated as definitive legal proof.
+---
 
-📞 Live Call Shield
+# D. Defend
 
-Protect users during potentially suspicious voice calls.
+## Voice Protection
 
-Live Call Shield monitors available audio signals and can alert the user when suspicious characteristics are detected.
+### Purpose
 
-How to use:
+Protect users before their voice becomes a resource for voice cloning.
 
-Open Live Call Shield.
-Enable protection.
-Start or answer a supported call.
-Keep Shield active during the conversation.
-If suspicious signals are detected, EchoProof displays an alert.
-Open the alert to see the reason and recommended action.
-🪪 Voice Passport
+---
 
-Create a cryptographically linked identity for your verified voice.
+## Voice Exposure Score
 
-Your Voice Passport can act as a reusable identity for future certified recordings.
+The Voice Exposure Score estimates how exposed a user's voice may be to potential misuse.
 
-How to use:
+### How to use
 
-Open Voice Passport.
-Complete voice enrollment.
-Follow the prompted recording process.
-EchoProof creates your voice profile.
-Use the profile when creating future certified recordings.
-🔐 Trust QR
+1. Open **Voice Protection**.
+2. Select **Voice Exposure Check**.
+3. Provide the requested voice samples or public audio sources.
+4. Start the analysis.
+5. View your **Voice Exposure Score**.
+6. Follow the recommended protection actions.
 
-Instantly verify an EchoProof-certified recording.
+---
 
-How to use:
+## Sensitive Recording Protection
 
-Open Scan & Verify.
-Scan the recording's EchoProof QR.
-EchoProof retrieves the certificate information.
-Compare the certificate with the supplied recording.
-View the verification status.
-Verification results
+Detect potentially sensitive information before sharing an audio recording.
 
-🟢 Verified
-The recording matches its certification data.
+### How to use
 
-🟡 Modified
-The recording or associated information has changed.
+1. Select a recording.
+2. Open **Privacy Check**.
+3. Start the analysis.
+4. Review the detected sensitive information.
+5. Decide whether to keep, protect, edit, or remove the recording before sharing.
 
-🔴 Failed Verification
-The recording cannot be validated against its certificate.
+---
 
-🔗 Chain of Custody
+# E. Educate
 
-Maintain a history of how a certified recording moves between users or systems.
+## Explainable AI
 
-How to use:
+### Purpose
 
-Open a certified recording.
-Select Chain of Custody.
-Add or verify a transfer.
-Each event is recorded with its associated metadata.
-Review the complete history whenever required.
-🌐 EchoProof API
+Explain why a recording received a particular authenticity result.
 
-Allow external applications and organizations to integrate EchoProof verification.
+Instead of simply displaying:
 
-Possible integrations include:
+> "Fake"
 
-Media platforms
-Communication applications
-Enterprise systems
-Investigation tools
-Digital-evidence workflows
+EchoProof explains the signals that contributed to the result.
 
-How to use:
+### How to use
 
-Create an EchoProof API project.
-Generate API credentials.
-Send supported audio/certificate data to the verification endpoint.
-Receive the authenticity and certification result.
-Integrate the result into your application workflow.
-🔄 Complete EchoProof Workflow
-RECORD
-   ↓
-AUTHENTICATE
-   ↓
-BIND
-   ↓
-CERTIFY
-   ↓
-PROTECT / SHARE
-   ↓
-VERIFY
-   ↓
-FORENSICS (if suspicious)
-In simple words:
+1. Authenticate a recording.
+2. Open **Why This Result?**
+3. Review the detected indicators.
+4. Select an indicator to view additional information.
+5. Use the explanation to make a more informed decision.
 
-A — Authenticate → Is the voice genuine?
+### Example
 
-B — Bind → Can we connect it to the recording environment?
+The system may identify:
 
-C — Certify → Can we cryptographically prove its origin?
+- Unnatural speech patterns
+- Synthetic audio artifacts
+- Inconsistent background characteristics
+- Possible editing
+- Abnormal frequency patterns
 
-D — Defend → Can we protect the user's voice?
+---
 
-E — Educate → Can we explain why something is suspicious?
+# F. Forensics
 
-F — Forensics → Can we investigate when something goes wrong?
+## Forensic Audio Analysis
 
-EchoProof doesn't just detect fake voices. It builds a complete trust layer around human speech.
+### Purpose
+
+Analyze suspicious recordings in greater detail.
+
+---
+
+## Tampering Analysis
+
+Detect potential modifications within an audio recording.
+
+### How to use
+
+1. Open **Forensics**.
+2. Upload the suspicious audio file.
+3. Select **Tampering Analysis**.
+4. Start the analysis.
+5. Review the detected suspicious sections.
+6. Select individual sections for detailed inspection.
+
+---
+
+## Audio Timeline
+
+### Purpose
+
+Display suspicious events throughout the recording.
+
+### How to use
+
+1. Open a completed forensic analysis.
+2. Select **Timeline**.
+3. Review the recording timeline.
+4. Select a highlighted section.
+5. Listen to the corresponding portion of the audio.
+6. Review the analysis associated with that section.
+
+---
+
+## Forensic Report
+
+### Purpose
+
+Generate a structured report containing the results of the forensic analysis.
+
+### How to use
+
+1. Complete a forensic analysis.
+2. Select **Generate Report**.
+3. Review the findings.
+4. Export the report.
+5. Share the report when required.
+
+> **Note:** EchoProof is an authenticity and forensic-assistance system. Its analysis should not automatically be considered definitive legal proof.
+
+---
+
+# Live Call Shield
+
+### Purpose
+
+Protect users from suspicious or potentially AI-generated voices during supported calls.
+
+Live Call Shield analyzes available audio signals during a call and can warn the user when suspicious characteristics are detected.
+
+### How to use
+
+1. Open **Live Call Shield**.
+2. Enable protection.
+3. Start or answer a supported call.
+4. Keep Live Call Shield active.
+5. If suspicious characteristics are detected, EchoProof displays an alert.
+6. Open the alert to understand the reason.
+7. Follow the recommended action.
+
+---
+
+# Voice Passport
+
+### Purpose
+
+Create a reusable cryptographic identity for a user's verified voice.
+
+The Voice Passport can be associated with future certified recordings.
+
+### How to use
+
+1. Open **Voice Passport**.
+2. Select **Create Passport**.
+3. Complete the voice enrollment process.
+4. Record the requested voice samples.
+5. Complete verification.
+6. EchoProof creates your Voice Passport.
+7. Use the passport when creating future certified recordings.
+
+---
+
+# Trust QR
+
+### Purpose
+
+Allow anyone to quickly verify an EchoProof-certified recording.
+
+### How to use
+
+1. Open **Scan & Verify**.
+2. Scan the EchoProof QR code.
+3. EchoProof retrieves the associated certificate.
+4. Provide or select the corresponding audio recording.
+5. EchoProof compares the recording with its certification information.
+6. View the verification result.
+
+### Verification Status
+
+#### Verified
+
+The recording matches the information associated with its certificate.
+
+#### Modified
+
+The recording or associated information has changed after certification.
+
+#### Verification Failed
+
+The recording cannot be successfully validated against the certificate.
+
+---
+
+# Chain of Custody
+
+### Purpose
+
+Track the history of a certified recording as it moves between users or systems.
+
+The system can maintain information about:
+
+- Original certification
+- Transfers
+- Verification events
+- Changes
+- Timestamps
+- Associated identities
+
+### How to use
+
+1. Open a certified recording.
+2. Select **Chain of Custody**.
+3. View the recording history.
+4. Add or verify a transfer when required.
+5. Review all recorded events.
+6. Use the history during verification or investigation.
+
+---
+
+# EchoProof API
+
+### Purpose
+
+Allow external applications and organizations to integrate EchoProof's verification system.
+
+Potential integrations include:
+
+- Communication platforms
+- Media platforms
+- Enterprise applications
+- Investigation systems
+- Digital evidence platforms
+
+### How to use
+
+1. Create an EchoProof API project.
+2. Generate API credentials.
+3. Send supported recording or certificate data to the API.
+4. EchoProof processes the submitted data.
+5. Receive the verification result.
+6. Integrate the result into your application.
+
+---
+
+# Complete Workflow
+
+EchoProof connects all features into one complete trust system.
+
+```text
+                  RECORD
+                     │
+                     ▼
+              A — AUTHENTICATE
+                     │
+                     ▼
+                 B — BIND
+              (Acoustic DNA)
+                     │
+                     ▼
+                C — CERTIFY
+                     │
+                     ▼
+             ┌───────┴────────┐
+             │                │
+             ▼                ▼
+        D — DEFEND       TRUST QR
+             │                │
+             ▼                ▼
+        E — EDUCATE       VERIFY
+             │
+             ▼
+       F — FORENSICS
+             │
+             ▼
+      FORENSIC REPORT
