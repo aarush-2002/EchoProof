@@ -1,0 +1,7 @@
+{
+  "name": "EchoProof",
+  "description": "Voice authenticity, digital evidence forensics, and provenance verification platform by Team Straw Hats, IIT Patna.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
